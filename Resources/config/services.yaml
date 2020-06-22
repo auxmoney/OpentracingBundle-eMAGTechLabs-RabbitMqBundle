@@ -1,0 +1,16 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Auxmoney\OpentracingEmagtechlabsRabbitMqBundle\EventSubscriber\:
+    resource: '../../EventSubscriber'
+
+  Auxmoney\OpentracingEmagtechlabsRabbitMqBundle\EventSubscriber\StartCommandSpanSubscriberDecorator:
+    decorates: Auxmoney\OpentracingBundle\EventListener\StartCommandSpanSubscriber
+    arguments: ['@Auxmoney\OpentracingEmagtechlabsRabbitMqBundle\EventSubscriber\StartCommandSpanSubscriberDecorator.inner']
+
+  Auxmoney\OpentracingEmagtechlabsRabbitMqBundle\EventSubscriber\FinishCommandSpanSubscriberDecorator:
+    decorates: Auxmoney\OpentracingBundle\EventListener\FinishCommandSpanSubscriber
+    arguments: ['@Auxmoney\OpentracingEmagtechlabsRabbitMqBundle\EventSubscriber\FinishCommandSpanSubscriberDecorator.inner']
