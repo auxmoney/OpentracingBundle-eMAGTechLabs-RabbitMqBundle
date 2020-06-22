@@ -1,0 +1,68 @@
+{
+  "name": "auxmoney/opentracing-bundle-emagtechlabs-rabbitmqbundle",
+  "description": "Symfony Opentracing bundle extension for eMAGTechLabs/RabbitMqBundle",
+  "keywords": [
+    "auxmoney",
+    "opentracing",
+    "opentracing-bundle",
+    "symfony",
+    "symfony-bundle",
+    "distributed-tracing",
+    "amqp",
+    "emagtechlabs",
+    "rabbitmq",
+    "queue",
+    "messaging",
+    "message-queue"
+  ],
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "require": {
+    "php": "^7.1.33",
+    "auxmoney/opentracing-bundle-core": "^v0.7.1",
+    "opentracing/opentracing": "1.0.0-beta5@beta",
+    "emag-tech-labs/rabbitmq-bundle": "^2.0"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master",
+    "phpunit/phpunit": "^7.5",
+    "phpstan/phpstan": "^0.12",
+    "squizlabs/php_codesniffer": "^3.5",
+    "phpmd/phpmd": "^2.7",
+    "php-coveralls/php-coveralls": "^2.2",
+    "symfony/filesystem": "*",
+    "symfony/process": "*",
+    "symfony/yaml": "*",
+    "mtdowling/jmespath.php": "^2.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Auxmoney\\OpentracingEmagtechlabsRabbitMqBundle\\": "./"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Auxmoney\\OpentracingEmagtechlabsRabbitMqBundle\\Tests\\": "./Tests/"
+    }
+  },
+  "scripts": {
+    "quality": [
+      "@phpcs",
+      "@phpmd",
+      "@phpstan",
+      "@phpunit"
+    ],
+    "phpmd": "vendor/bin/phpmd . text cleancode,codesize,controversial,design,naming,unusedcode --exclude vendor,Tests",
+    "phpcs": "vendor/bin/phpcs",
+    "phpunit": "phpdbg -qrr vendor/bin/phpunit --colors=never --testsuite=unit",
+    "phpunit-functional": [
+      "vendor/auxmoney/opentracing-bundle-core/Tests/Functional/Scripts/checkEnvironment.sh",
+      "vendor/auxmoney/opentracing-bundle-core/Tests/Functional/Scripts/setup.sh",
+      "Tests/Functional/Scripts/requireAdditionalVendors.sh",
+      "vendor/auxmoney/opentracing-bundle-core/Tests/Functional/Scripts/createResetPoint.sh",
+      "vendor/bin/phpunit --colors=never --testsuite=functional --no-coverage",
+      "vendor/auxmoney/opentracing-bundle-core/Tests/Functional/Scripts/teardown.sh"
+    ],
+    "phpstan": "vendor/bin/phpstan analyse --no-progress"
+  }
+}
