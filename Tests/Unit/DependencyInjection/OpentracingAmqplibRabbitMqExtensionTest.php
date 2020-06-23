@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Auxmoney\OpentracingEmagtechlabsRabbitMqBundle\Tests\Unit\DependencyInjection;
 
-use Auxmoney\OpentracingEmagtechlabsRabbitMqBundle\DependencyInjection\OpentracingAmqplibRabbitMqExtension;
+use Auxmoney\OpentracingEmagtechlabsRabbitMqBundle\DependencyInjection\OpentracingEmagtechlabsRabbitMqExtension;
 use Auxmoney\OpentracingEmagtechlabsRabbitMqBundle\EventSubscriber\AfterMessageProcessingSubscriber;
 use Auxmoney\OpentracingEmagtechlabsRabbitMqBundle\EventSubscriber\BeforeMessageProcessingSubscriber;
 use Auxmoney\OpentracingEmagtechlabsRabbitMqBundle\EventSubscriber\FinishCommandSpanSubscriberDecorator;
@@ -16,12 +16,12 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 class OpentracingAmqplibRabbitMqExtensionTest extends TestCase
 {
-    /** @var OpentracingAmqplibRabbitMqExtension */
+    /** @var OpentracingEmagtechlabsRabbitMqExtension */
     private $subject;
 
     public function setUp(): void
     {
-        $this->subject = new OpentracingAmqplibRabbitMqExtension();
+        $this->subject = new OpentracingEmagtechlabsRabbitMqExtension();
     }
 
     public function testLoad(): void
