@@ -1,8 +1,7 @@
 # auxmoney OpentracingBundle - eMAGTechLabs/RabbitMqBundle
 
-![release](https://github.com/auxmoney/OpentracingBundle-eMAGTechLabs-RabbitMqBundle/workflows/release/badge.svg)
+[![test](https://github.com/auxmoney/OpentracingBundle-eMAGTechLabs-RabbitMqBundle/workflows/test/badge.svg)](https://github.com/auxmoney/OpentracingBundle-eMAGTechLabs-RabbitMqBundle/actions?query=workflow%3Atest)
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/auxmoney/OpentracingBundle-eMAGTechLabs-RabbitMqBundle)
-![Travis (.org)](https://img.shields.io/travis/auxmoney/OpentracingBundle-eMAGTechLabs-RabbitMqBundle)
 ![Coveralls github](https://img.shields.io/coveralls/github/auxmoney/OpentracingBundle-eMAGTechLabs-RabbitMqBundle)
 ![Codacy Badge](https://api.codacy.com/project/badge/Grade/cf98c0ee71c249b992f673559448965b)
 ![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/auxmoney/OpentracingBundle-eMAGTechLabs-RabbitMqBundle)
