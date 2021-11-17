@@ -21,14 +21,14 @@ jobs:
     strategy:
       matrix:
         include:
-          - php: '7.2'
+          - php: '7.3'
             symfony: '4.4.*'
           - php: '7.4'
             symfony: '4.4.*'
-          - php: '7.2'
-            symfony: '5.1.*'
+          - php: '7.3'
+            symfony: '5.3.*'
           - php: '7.4'
-            symfony: '5.1.*'
+            symfony: '5.3.*'
     steps:
       - name: checkout
         uses: actions/checkout@v2
@@ -67,7 +67,7 @@ jobs:
       matrix:
         symfony:
           - '4.4.*'
-          - '5.1.*'
+          - '5.3.*'
     steps:
       - name: Setup RabbitMQ
         uses: nijel/rabbitmq-action@v1.0.0
