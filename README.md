@@ -1,3 +1,5 @@
+# This project is abandoned in favour of [auxmoney/OpentracingBundle-amqplib-RabbitMq](https://github.com/auxmoney/OpentracingBundle-amqplib-RabbitMq), following the abandonment of [eMAGTechLabs fork of RabbitMq](https://github.com/eMAGTechLabs/RabbitMqBundle). Please switch to [auxmoney/OpentracingBundle-amqplib-RabbitMq](https://github.com/auxmoney/OpentracingBundle-amqplib-RabbitMq).
+
 # auxmoney OpentracingBundle - eMAGTechLabs/RabbitMqBundle
 
 [![test](https://github.com/auxmoney/OpentracingBundle-eMAGTechLabs-RabbitMqBundle/workflows/test/badge.svg)](https://github.com/auxmoney/OpentracingBundle-eMAGTechLabs-RabbitMqBundle/actions?query=workflow%3Atest)
