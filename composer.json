@@ -1,6 +1,7 @@
 {
   "name": "auxmoney/opentracing-bundle-emagtechlabs-rabbitmqbundle",
   "description": "Symfony Opentracing bundle extension for eMAGTechLabs/RabbitMqBundle",
+  "abandoned": "auxmoney/opentracing-bundle-amqplib-rabbitmq",
   "keywords": [
     "auxmoney",
     "opentracing",
